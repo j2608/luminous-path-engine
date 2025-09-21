@@ -47,6 +47,14 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // Cybersecurity theme colors
+        cyber: {
+          blue: "hsl(var(--cyber-blue))",
+          navy: "hsl(var(--cyber-navy))",
+          teal: "hsl(var(--cyber-teal))",
+          red: "hsl(var(--cyber-red))",
+          success: "hsl(var(--cyber-success))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
