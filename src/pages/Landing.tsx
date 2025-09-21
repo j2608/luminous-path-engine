@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Shield, Eye, AlertTriangle, CheckCircle2, ArrowRight, Lock, Zap, Globe } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 const features = [
   {
@@ -68,9 +69,12 @@ export default function Landing() {
               <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors">About</a>
               <a href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">Contact</a>
             </div>
-            <Button variant="cyber" onClick={() => navigate('/dashboard')}>
-              Launch Dashboard
-            </Button>
+            <div className="flex items-center space-x-4">
+              <ThemeToggle />
+              <Button variant="cyber" onClick={() => navigate('/dashboard')}>
+                Launch Dashboard
+              </Button>
+            </div>
           </div>
         </nav>
 
@@ -81,10 +85,10 @@ export default function Landing() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="max-w-4xl mx-auto"
+              className="max-w-4xl mx-auto bg-background/80 backdrop-blur-sm p-12 rounded-3xl border border-border/20"
             >
               <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-6 tracking-tighter">
-                <span className="bg-gradient-cyber bg-clip-text text-transparent">
+                <span className="text-cyber-blue">
                   Advanced VNC
                 </span>
                 <br />

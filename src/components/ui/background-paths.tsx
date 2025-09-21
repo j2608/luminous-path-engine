@@ -90,7 +90,7 @@ export function BackgroundPaths({
                                             stiffness: 150,
                                             damping: 25,
                                         }}
-                                        className="inline-block text-transparent bg-clip-text bg-gradient-cyber"
+                                        className="inline-block text-foreground"
                                     >
                                         {letter}
                                     </motion.span>
@@ -98,21 +98,6 @@ export function BackgroundPaths({
                             </span>
                         ))}
                     </h1>
-
-                    <div className="inline-block group relative bg-gradient-border p-px rounded-2xl backdrop-blur-lg overflow-hidden shadow-glow hover:shadow-glow-intense transition-all duration-300">
-                        <Button
-                            variant="cyber"
-                            size="lg"
-                            className="rounded-[1.15rem] px-8 py-6 text-lg font-semibold group-hover:-translate-y-0.5 transition-all duration-300"
-                        >
-                            <span className="opacity-90 group-hover:opacity-100 transition-opacity">
-                                Discover Excellence
-                            </span>
-                            <span className="ml-3 opacity-70 group-hover:opacity-100 group-hover:translate-x-1.5 transition-all duration-300">
-                                →
-                            </span>
-                        </Button>
-                    </div>
                 </motion.div>
             </div>
         </div>
