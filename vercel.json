@@ -12,13 +12,5 @@
       "src": "/(.*)",
       "dest": "/index.html"
     }
-  ],
-  "functions": {
-    "api/**/*.js": {
-      "runtime": "@vercel/node@3"
-    }
-  },
-  "env": {
-    "NODE_ENV": "production"
-  }
+  ]
 }
