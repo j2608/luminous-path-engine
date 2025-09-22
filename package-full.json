@@ -1,15 +1,16 @@
 {
-  "name": "vite_react_shadcn_ts",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "name": "luminous-path-engine",
+  "version": "1.0.0",
+  "description": "Luminous Path Engine - A modern web application with backend",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "build:dev": "vite build --mode development",
-    "lint": "eslint .",
-    "preview": "vite preview",
-    "vercel-build": "vite build"
+    "start": "cd backend && npm start",
+    "build": "npm run build:frontend && npm run install:backend",
+    "build:frontend": "vite build",
+    "install:backend": "cd backend && npm install",
+    "dev:frontend": "vite",
+    "dev:backend": "cd backend && npm run dev",
+    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\"",
+    "postinstall": "npm run install:backend"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
@@ -71,6 +72,7 @@
     "@types/react-dom": "^18.3.7",
     "@vitejs/plugin-react-swc": "^3.11.0",
     "autoprefixer": "^10.4.21",
+    "concurrently": "^8.2.2",
     "eslint": "^9.32.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
