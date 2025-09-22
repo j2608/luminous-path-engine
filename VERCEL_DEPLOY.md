@@ -7,7 +7,7 @@
 1. **Push to GitHub** (if not already done):
    ```bash
    git add .
-   git commit -m "Prepare for Vercel deployment - removed all Lovable references"
+   git commit -m "Prepare for Vercel deployment - cleaned all external dependencies"
    git push origin main
    ```
 
@@ -49,7 +49,7 @@ After deployment, you'll receive URLs like:
 
 ## ✅ Pre-Deployment Checklist
 
-✅ **All Lovable references removed**
+✅ **All external dependencies cleaned**
 ✅ **Vercel configuration created** (`vercel.json`)
 ✅ **Serverless API functions ready** (`/api` directory)
 ✅ **Build script configured** (`vercel-build` in package.json)

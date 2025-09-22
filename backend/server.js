@@ -61,9 +61,9 @@ app.use((err, req, res, next) => {
 
 // Start server
 app.listen(PORT, () => {
-  console.log(`🚀 Luminous Path Engine Backend running on port ${PORT}`);
-  console.log(`📱 Frontend served at: http://localhost:${PORT}`);
-  console.log(`🔗 API available at: http://localhost:${PORT}/api`);
+  console.log(`Luminous Path Engine Backend running on port ${PORT}`);
+  console.log(`Frontend served at: http://localhost:${PORT}`);
+  console.log(`API available at: http://localhost:${PORT}/api`);
 });
 
 module.exports = app;
