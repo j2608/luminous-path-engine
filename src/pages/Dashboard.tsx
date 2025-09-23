@@ -116,7 +116,7 @@ export default function Dashboard() {
               </Button>
               <div className="flex items-center space-x-2">
                 <Shield className="w-8 h-8 text-cyber-blue" />
-                <h1 className="text-2xl font-bold">VNC Shield Dashboard</h1>
+                <h1 className="text-2xl font-bold">VNC KAVACH Dashboard</h1>
               </div>
             </div>
             <div className="flex items-center space-x-4">

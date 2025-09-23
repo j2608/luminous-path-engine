@@ -53,7 +53,7 @@ export default function Landing() {
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <section className="relative">
-        <BackgroundPaths title="VNC Shield" />
+  <BackgroundPaths title="VNC KAVACH" />
         
         {/* Navigation */}
         <nav className="absolute top-0 left-0 right-0 z-20 p-6">
@@ -61,7 +61,7 @@ export default function Landing() {
             <div className="flex items-center space-x-2">
               <Shield className="w-8 h-8 text-cyber-blue" />
               <span className="text-2xl font-bold bg-gradient-cyber bg-clip-text text-transparent">
-                VNC Shield
+                VNC KAVACH
               </span>
             </div>
             <div className="hidden md:flex space-x-8">
