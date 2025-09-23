@@ -65,7 +65,7 @@ const attackSteps: AttackStep[] = [
   {
     id: 6,
     title: "Detection & Response",
-    description: "VNC Shield detects and blocks the attack",
+  description: "VNC KAVACH detects and blocks the attack",
     status: 'pending'
   }
 ];
@@ -109,7 +109,7 @@ export default function DemoAttack() {
               ...step,
               status: 'blocked',
               timestamp: now,
-              details: 'Attack successfully blocked by VNC Shield'
+              details: 'Attack successfully blocked by VNC KAVACH'
             };
           }
           // Steps 0-2 are successful for the attacker
@@ -150,7 +150,7 @@ export default function DemoAttack() {
     switch (status) {
       case 'active': return <Activity className="w-4 h-4 text-yellow-500" />;
       case 'detected': return <Eye className="w-4 h-4 text-orange-500" />;
-      case 'blocked': return <Shield className="w-4 h-4 text-green-500" />;
+  case 'blocked': return <Shield className="w-4 h-4 text-green-500" aria-label="VNC KAVACH status" />;
       default: return <Clock className="w-4 h-4 text-gray-400" />;
     }
   };
@@ -206,7 +206,7 @@ export default function DemoAttack() {
             <Alert className="border-green-500/20 bg-green-500/10">
               <Shield className="h-4 w-4 text-green-500" />
               <AlertDescription className="text-green-700 dark:text-green-300">
-                <strong>Attack Successfully Blocked!</strong> VNC Shield detected and neutralized the threat in real-time.
+                <strong>Attack Successfully Blocked!</strong> VNC KAVACH detected and neutralized the threat in real-time.
               </AlertDescription>
             </Alert>
           ) : isRunning ? (
@@ -220,7 +220,7 @@ export default function DemoAttack() {
             <Alert className="border-blue-500/20 bg-blue-500/10">
               <Monitor className="h-4 w-4 text-blue-500" />
               <AlertDescription className="text-blue-700 dark:text-blue-300">
-                <strong>Ready to Simulate</strong> - Click "Start Demo Attack" to see VNC Shield in action.
+                <strong>Ready to Simulate</strong> - Click "Start Demo Attack" to see VNC KAVACH in action.
               </AlertDescription>
             </Alert>
           )}
@@ -396,7 +396,7 @@ export default function DemoAttack() {
             <CardHeader>
               <CardTitle>About This Demo</CardTitle>
               <CardDescription>
-                This simulation demonstrates how VNC Shield protects against real-world attack scenarios
+                This simulation demonstrates how VNC KAVACH protects against real-world attack scenarios
               </CardDescription>
             </CardHeader>
             <CardContent>

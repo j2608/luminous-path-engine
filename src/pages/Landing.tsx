@@ -58,8 +58,8 @@ export default function Landing() {
         {/* Navigation */}
         <nav className="absolute top-0 left-0 right-0 z-20 p-6">
           <div className="container mx-auto flex justify-between items-center">
-            <div className="flex items-center space-x-2">
-              <Shield className="w-8 h-8 text-cyber-blue" />
+              <div className="flex items-center space-x-2">
+              <img src="/logo-kavach.svg" alt="VNC KAVACH" className="w-10 h-5 object-contain" />
               <span className="text-2xl font-bold bg-gradient-cyber bg-clip-text text-transparent">
                 VNC KAVACH
               </span>

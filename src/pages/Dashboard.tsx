@@ -115,7 +115,7 @@ export default function Dashboard() {
                 Back to Home
               </Button>
               <div className="flex items-center space-x-2">
-                <Shield className="w-8 h-8 text-cyber-blue" />
+                <img src="/logo-kavach.svg" alt="VNC KAVACH" className="w-10 h-5 object-contain" />
                 <h1 className="text-2xl font-bold">VNC KAVACH Dashboard</h1>
               </div>
             </div>
