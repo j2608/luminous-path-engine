@@ -2,15 +2,13 @@ import { motion } from "framer-motion";
 import { BackgroundPaths } from "@/components/ui/background-paths";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Eye, AlertTriangle, CheckCircle2, ArrowRight, Lock, Zap, Globe } from "lucide-react";
+import { Shield, Eye, AlertTriangle, CheckCircle2, ArrowRight, Lock, Zap, Globe } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { ThemeToggle } from "@/components/theme-toggle";
 
 const features = [
   {
-    icon: (props: any) => (
-      <img src="/logo-kavach.svg" alt="VNC KAVACH" {...props} />
-    ),
+    icon: Shield,
     title: "Real-time Protection",
     description: "Advanced AI-powered detection system that monitors VNC traffic 24/7 to identify suspicious activities."
   },
@@ -60,8 +58,8 @@ export default function Landing() {
         {/* Navigation */}
         <nav className="absolute top-0 left-0 right-0 z-20 p-6">
           <div className="container mx-auto flex justify-between items-center">
-              <div className="flex items-center space-x-2">
-              <img src="/logo-kavach.svg" alt="VNC KAVACH" className="w-10 h-5 object-contain" />
+            <div className="flex items-center space-x-2">
+              <Shield className="w-8 h-8 text-cyber-blue" />
               <span className="text-2xl font-bold bg-gradient-cyber bg-clip-text text-transparent">
                 VNC KAVACH
               </span>
@@ -73,9 +71,6 @@ export default function Landing() {
             </div>
             <div className="flex items-center space-x-4">
               <ThemeToggle />
-              <Button variant="cyber" onClick={() => navigate('/dashboard')}>
-                Launch Dashboard
-              </Button>
             </div>
           </div>
         </nav>
@@ -89,27 +84,17 @@ export default function Landing() {
               transition={{ duration: 0.8 }}
               className="max-w-4xl mx-auto bg-background/80 backdrop-blur-sm p-12 rounded-3xl border border-border/20"
             >
-              <div className="flex flex-col md:flex-row items-center justify-center gap-8">
-                <img src="/kavach-hero.png" alt="VNC KAVACH" className="w-56 h-56 rounded-lg shadow-xl" />
-                <div className="text-center md:text-left">
-                  <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-4 leading-tight">
-                    <span className="block text-cyber-blue">VNC</span>
-                    <span className="block text-foreground">KAVACH</span>
-                  </h1>
-                  <p className="text-lg text-muted-foreground mb-6 max-w-xl">
-                    Secure remote access and intelligent VNC attack protection. Prevent data leaks and
-                    respond in milliseconds with AI-powered detection.
-                  </p>
-                  <div className="flex gap-4 justify-center md:justify-start">
-                    <Button size="lg" onClick={() => navigate('/dashboard')} className="bg-gradient-cyber hover:opacity-90 text-white font-semibold px-6 py-3">
-                      View Dashboard
-                    </Button>
-                    <Button size="lg" variant="outline" onClick={() => navigate('/demo')} className="border-primary/20">
-                      See Demo
-                    </Button>
-                  </div>
-                </div>
-              </div>
+              <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-6 tracking-tighter">
+                <span className="text-cyber-blue">
+                  Advanced VNC
+                </span>
+                <br />
+                <span className="text-foreground">Attack Protection</span>
+              </h1>
+              <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+                Identify and neutralize Virtual Network Computing (VNC) based data exfiltration attacks 
+                with our cutting-edge AI-powered security platform.
+              </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button 
                   size="lg" 
@@ -217,24 +202,7 @@ export default function Landing() {
               Experience the power of advanced VNC attack detection and protection. 
               See our system in action with a live demo.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                size="lg"
-                variant="secondary"
-                onClick={() => navigate('/dashboard')}
-                className="bg-white text-cyber-blue hover:bg-white/90 font-semibold px-8 py-4"
-              >
-                Open Dashboard
-              </Button>
-              <Button 
-                size="lg"
-                variant="outline"
-                onClick={() => navigate('/demo')}
-                className="border-white/20 text-white hover:bg-white/10 backdrop-blur-sm"
-              >
-                Try Demo Attack
-              </Button>
-            </div>
+            <div className="mt-4" />
           </motion.div>
         </div>
       </section>
