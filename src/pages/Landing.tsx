@@ -2,13 +2,15 @@ import { motion } from "framer-motion";
 import { BackgroundPaths } from "@/components/ui/background-paths";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Shield, Eye, AlertTriangle, CheckCircle2, ArrowRight, Lock, Zap, Globe } from "lucide-react";
+import { Eye, AlertTriangle, CheckCircle2, ArrowRight, Lock, Zap, Globe } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { ThemeToggle } from "@/components/theme-toggle";
 
 const features = [
   {
-    icon: Shield,
+    icon: (props: any) => (
+      <img src="/logo-kavach.svg" alt="VNC KAVACH" {...props} />
+    ),
     title: "Real-time Protection",
     description: "Advanced AI-powered detection system that monitors VNC traffic 24/7 to identify suspicious activities."
   },

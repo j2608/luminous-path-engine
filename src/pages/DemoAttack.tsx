@@ -9,7 +9,7 @@ import {
   Play, 
   Square, 
   AlertTriangle, 
-  Shield, 
+  
   Activity,
   Eye,
   Zap,
@@ -150,7 +150,7 @@ export default function DemoAttack() {
     switch (status) {
       case 'active': return <Activity className="w-4 h-4 text-yellow-500" />;
       case 'detected': return <Eye className="w-4 h-4 text-orange-500" />;
-  case 'blocked': return <Shield className="w-4 h-4 text-green-500" aria-label="VNC KAVACH status" />;
+  case 'blocked': return <img src="/logo-kavach.svg" className="w-4 h-4" alt="VNC KAVACH" />;
       default: return <Clock className="w-4 h-4 text-gray-400" />;
     }
   };
@@ -202,9 +202,9 @@ export default function DemoAttack() {
           transition={{ duration: 0.6 }}
           className="mb-8"
         >
-          {blocked ? (
+            {blocked ? (
             <Alert className="border-green-500/20 bg-green-500/10">
-              <Shield className="h-4 w-4 text-green-500" />
+              <img src="/logo-kavach.svg" className="h-4 w-4" alt="VNC KAVACH" />
               <AlertDescription className="text-green-700 dark:text-green-300">
                 <strong>Attack Successfully Blocked!</strong> VNC KAVACH detected and neutralized the threat in real-time.
               </AlertDescription>
