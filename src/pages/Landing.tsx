@@ -89,17 +89,27 @@ export default function Landing() {
               transition={{ duration: 0.8 }}
               className="max-w-4xl mx-auto bg-background/80 backdrop-blur-sm p-12 rounded-3xl border border-border/20"
             >
-              <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-6 tracking-tighter">
-                <span className="text-cyber-blue">
-                  Advanced VNC
-                </span>
-                <br />
-                <span className="text-foreground">Attack Protection</span>
-              </h1>
-              <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-                Identify and neutralize Virtual Network Computing (VNC) based data exfiltration attacks 
-                with our cutting-edge AI-powered security platform.
-              </p>
+              <div className="flex flex-col md:flex-row items-center justify-center gap-8">
+                <img src="/kavach-hero.png" alt="VNC KAVACH" className="w-56 h-56 rounded-lg shadow-xl" />
+                <div className="text-center md:text-left">
+                  <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-4 leading-tight">
+                    <span className="block text-cyber-blue">VNC</span>
+                    <span className="block text-foreground">KAVACH</span>
+                  </h1>
+                  <p className="text-lg text-muted-foreground mb-6 max-w-xl">
+                    Secure remote access and intelligent VNC attack protection. Prevent data leaks and
+                    respond in milliseconds with AI-powered detection.
+                  </p>
+                  <div className="flex gap-4 justify-center md:justify-start">
+                    <Button size="lg" onClick={() => navigate('/dashboard')} className="bg-gradient-cyber hover:opacity-90 text-white font-semibold px-6 py-3">
+                      View Dashboard
+                    </Button>
+                    <Button size="lg" variant="outline" onClick={() => navigate('/demo')} className="border-primary/20">
+                      See Demo
+                    </Button>
+                  </div>
+                </div>
+              </div>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button 
                   size="lg" 
